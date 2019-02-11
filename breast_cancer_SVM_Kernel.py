@@ -71,7 +71,7 @@ grid_result = grid.fit(X_train,y_train)
 print("Best: %f using %s" % (grid_result.best_score_, grid_result.best_params_))
 print("Execution time: " + str((time.time() - start_time)) + ' ms')
 
-
+'''
 #Randomized Search
 from sklearn.model_selection import RandomizedSearchCV
 random = RandomizedSearchCV(estimator=svm_classifier, param_distributions=hyperparameters, cv=3, n_jobs=-1)
@@ -80,7 +80,7 @@ random_result = random.fit(X, y)
 # Summarize results
 print("Best: %f using %s" % (random_result.best_score_, random_result.best_params_))
 print("Execution time: " + str((time.time() - start_time)) + ' ms')
-
+'''
 
 
 # Plotting learning curve - Option 2

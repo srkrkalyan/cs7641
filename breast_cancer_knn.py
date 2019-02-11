@@ -149,7 +149,7 @@ print('\n', '-' * 20) # separator
 print('\nMean validation scores\n\n',pd.Series(validation_scores_mean, index = train_sizes))
 
 import matplotlib.pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 
 plt.style.use('seaborn')
 

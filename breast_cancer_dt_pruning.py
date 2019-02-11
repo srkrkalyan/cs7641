@@ -29,7 +29,8 @@ X_test = sc.transform(X_test)
 
 # fitting classifier to training set
 from sklearn.tree import DecisionTreeClassifier
-classifier = DecisionTreeClassifier(criterion = 'entropy',splitter='best')
+#classifier = DecisionTreeClassifier(criterion = 'entropy',splitter='best')
+classifier = DecisionTreeClassifier(max_depth=10,max_leaf_nodes=10,min_samples_split=3,splitter='random')
 classifier.fit(X_train,y_train)
 
 y_pred = classifier.predict(X_test)
@@ -116,7 +117,7 @@ print('\n', '-' * 20) # separator
 print('\nMean validation scores\n\n',pd.Series(validation_scores_mean, index = train_sizes))
 
 import matplotlib.pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 
 plt.style.use('seaborn')
 
@@ -153,7 +154,7 @@ print('\n', '-' * 20) # separator
 print('\nMean validation scores\n\n',pd.Series(validation_scores_mean, index = train_sizes))
 
 import matplotlib.pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 
 plt.style.use('seaborn')
 
