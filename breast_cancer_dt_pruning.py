@@ -8,6 +8,7 @@ Created on Sat Feb  9 17:34:56 2019
 
 # Importing libraries
 import pandas as pd
+from sklearn.model_selection import learning_curve
 
 # Importing the dataset
 dataset = pd.read_csv('breast_cancer_data.csv')

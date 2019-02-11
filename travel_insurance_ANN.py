@@ -10,7 +10,7 @@ Created on Sat Feb  2 15:52:09 2019
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
+from sklearn.model_selection import learning_curve
 
 
 # Importing the dataset

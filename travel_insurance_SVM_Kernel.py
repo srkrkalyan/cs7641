@@ -99,6 +99,8 @@ print("Execution time: " + str((time.time() - start_time)) + ' ms')
 
 #Optimized hyperparameters: kernel = 'rbf',  degree=2
 
+from sklearn.model_selection import learning_curve
+
 train_sizes = [5000,10000, 15000,20000]
 
 train_sizes, train_scores, validation_scores = learning_curve(

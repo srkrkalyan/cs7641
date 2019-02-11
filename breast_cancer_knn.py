@@ -89,7 +89,7 @@ print("KNN model accuracy - Breast Cancer Prediction: ", round(metrics.accuracy_
 
 # Plotting learning curve - Option 2
 
-
+from sklearn.model_selection import learning_curve
 train_sizes = [10,30,60,70,100,150,180,200,220,260]
 
 train_sizes, train_scores, validation_scores = learning_curve(

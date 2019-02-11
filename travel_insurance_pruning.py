@@ -65,6 +65,7 @@ cm = confusion_matrix(y_test,y_pred)
 from sklearn import metrics
 print("Decision Tree model accuracy: ", round(metrics.accuracy_score(y_test,y_pred),6))
 
+from sklearn.model_selection import learning_curve
 
 # Learning Curve - Accuracy
 

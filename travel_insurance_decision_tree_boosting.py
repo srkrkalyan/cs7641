@@ -93,7 +93,7 @@ export_graphviz(classifier, out_file='dot_data.dot',
 #graph = pydotplus.graph_from_dot_data(dot_data.getvalue())  
 #Image(graph.create_png())
 '''
-
+from sklearn.model_selection import learning_curve
 # Learning Curve - Accuracy
 
 train_sizes = [100,500,1000,5000,10000,20000]

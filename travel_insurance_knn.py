@@ -76,6 +76,7 @@ print("KNN model accuracy: ", round(metrics.accuracy_score(y_test,y_pred),6))
 # Plotting learning curve - Option 2
 
 # Learning Curve - Accuracy
+from sklearn.model_selection import learning_curve
 
 train_sizes = [500,1000,5000,10000,20000]
 

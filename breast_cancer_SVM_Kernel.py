@@ -88,6 +88,7 @@ print("Execution time: " + str((time.time() - start_time)) + ' ms')
 # Learning Curve - Accuracy
 
 #Optimized hyperparameters: kernel = 'rbf',  degree=2
+from sklearn.model_selection import learning_curve
 
 train_sizes = [10,30,60,70,100,150,180,200,220,260,300,350]
 

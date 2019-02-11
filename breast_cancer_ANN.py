@@ -13,6 +13,7 @@ This is a temporary script file.
 """
 # Importing libraries
 import pandas as pd
+from sklearn.model_selection import learning_curve
 
 # Importing the dataset
 dataset = pd.read_csv('breast_cancer_data.csv')
